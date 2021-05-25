@@ -1,0 +1,20 @@
+<%- include ('partials/header.ejs') %>
+<div>
+    <h1>This is a sample</h1>
+    <form method="POST" action="/addThread">
+        <div>
+            <div class="form-group">
+                <label for="threadTitle">Title</label>
+                <input required type="text" class="form-control"  placeholder="Enter Thread" autofocus="" maxlength="50" name="thread_title"/>
+            </div>
+            <div class="form-group">
+                <label for="threadTitle">Enter Description</label>
+                <input required type="text" class="form-control"  placeholder="Enter Description" autofocus="" maxlength="200" name="thread_body"/>
+            </div>
+        </div>        
+            <button type="submit" class="postbutton">
+                Post
+            </button>       
+    </form>
+</div>
+<%- include ('partials/footer.ejs') %>
